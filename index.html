@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Cymetria</h1>
+    </header>
+    <!-- Formulario -->
+    <div class="form-contacto">
+        <form action="/registro" method="POST">
+            <ul>
+                <p>El campo es obligatorio: (*)</p>
+                <!-- Nombre -->
+                <li><label for="nombre">Nombre: (*)</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre completo" required/></li><br>
+                <!-- Correo electrónico -->
+                <li><label for="correo">Correo: (*)</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electrónico" required/></li><br>
+                <!-- Teléfono -->
+                <li><label for="telefono">Teléfono: (*)</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu número de teléfono" required/></li><br>
+                <!-- País -->
+                <li><label for="pais">País: (*)</label>
+                <input type="text" name="pais" id="pais" placeholder="Ingresa tu pais de nacimiento" required/></li><br>
+                <!-- Ciudad -->
+                <li><label for="ciudad">Ciudad: (*)</label>
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ingresa tu ciudad de nacimiento" required/></li><br>
+                <!-- Comentario -->
+                <li><label for="comentario">Deja tu mensaje para la empresa:</label></li>
+                <br>
+                <textarea name="comentario" id="comentario"></textarea>        
+            </ul>
+            <div class="btn-form">
+                <div class="btn-enviar"><button type="submit">Enviar</button></div> 
+                <div class="btn-reset"><button type="reset">Cancelar</button></div>
+            </div>
+        </form>
+    </div>
+    <div class="logo-cymetria"><img src="img/logo_cymetria.png" alt="logo de cymetria"></div>
+</body>
+</html>
